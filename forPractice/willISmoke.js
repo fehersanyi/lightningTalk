@@ -1,20 +1,20 @@
-let t = 800;
-let md = 4;
-let tiwl = 0;
+let timeIWokeUp = 800;
+let missedDays = 0;
+let timesIWasLate = 0;
 
 function myFunction() {
 	//too much?
-	if (t > 730) {
+	if (timeIWokeUp > 730) {
 	//yes
 		//did i miss it?
 		//am i lucky?
 		//no
 		if (Math.random() > 0.5) {
 			//do i care?
-			if((md >= 2 || tiwl >= 4) || t > 800) {
+			if((missedDays >= 2 || timesIWasLate >= 4) || timeIWokeUp > 800) {
 				return 'no';
 				//or do i?
-			} else if(md < 2 || td < 4) {
+			} else if(missedDays < 2 || timesIWasLate < 4) {
 				return 'yes';
 				// or do i?
 			} else {
