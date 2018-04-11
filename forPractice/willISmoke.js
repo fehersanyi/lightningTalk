@@ -28,7 +28,6 @@ function amILate() {
 	}
 };
 
-
 function didIMissTheTroli() {
 	if(didISleepTooMuch()) {
 		if (amILucky()=== false) {
@@ -42,8 +41,7 @@ function didIMissTheTroli() {
 function amILucky() {
 	if (Math.random() > 0.5) {
 		return true;
-	} 
-	else {
+	} else {
 		return false;
 	}
 }
@@ -51,8 +49,7 @@ function amILucky() {
 function didISleepTooMuch() {
 	if (timeIWokeUp > 730) {
 		return true;
-	}
-	else {
+	} else {
 		return false;
 	}
 }
