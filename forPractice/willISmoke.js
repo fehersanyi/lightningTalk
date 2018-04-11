@@ -2,13 +2,29 @@ let timeIWokeUp = 800;
 let missedDays = 0;
 let timesIWasLate = 0;
 
-function didIMissTheTroli() {
-	if((missedDays >= 2 || timesIWasLate >= 4) || timeIWokeUp > 800) {
-		return 'no';
-	} else if(missedDays < 2 || timesIWasLate < 4) {
-		return 'yes';
+function amILate() {
+	if(timeIWokeUp < 800) {
+		return false;
 	} else {
-		return 'yes';
+		didIMissTheTroli()
+	}
+};
+
+if((missedDays >= 2 || timesIWasLate >= 4)) {
+	return 'no';
+} else if(missedDays < 2 || timesIWasLate < 4) {
+	return 'yes';
+} else {
+	return 'yes';
+}
+
+function didIMissTheTroli() {
+	if(didISleepTooMuch()) {
+		if (amILucky()=== false) {
+			return true;
+		}
+	} else {
+		return false;
 	}
 }
 
