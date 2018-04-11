@@ -2,38 +2,31 @@ let timeIWokeUp = 800;
 let missedDays = 0;
 let timesIWasLate = 0;
 
+function didIMissTheTroli() {
+	if((missedDays >= 2 || timesIWasLate >= 4) || timeIWokeUp > 800) {
+		return 'no';
+	} else if(missedDays < 2 || timesIWasLate < 4) {
+		return 'yes';
+	} else {
+		return 'yes';
+	}
+}
+
 function amILucky() {
 	if (Math.random() > 0.5) {
-		//do i care?
-		if((missedDays >= 2 || timesIWasLate >= 4) || timeIWokeUp > 800) {
-			return 'no';
-			//or do i?
-		} else if(missedDays < 2 || timesIWasLate < 4) {
-			return 'yes';
-			// or do i?
-		} else {
-			return 'yes';
-		}
-		//am i late?
+		return true;
 	} 
-	// no
 	else {
-		return 'yes'
+		return false;
 	}
 }
 
 function didISleepTooMuch() {
-	//too much?
 	if (timeIWokeUp > 730) {
-	//yes
-		//did i miss it?
-		//am i lucky?
-		//no
+		return true;
 	}
-	// no i dont
 	else {
-		//did i miss the bus?
-		return 'yes';
+		return false;
 	}
 }
 
