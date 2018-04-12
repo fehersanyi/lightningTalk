@@ -13,7 +13,7 @@ function willISmoke() {
 };
 
 function doICare() {
-	if (missedDays >= 2 || timesIWasLate >= 4) {
+	if (missedDays >= 2 && timesIWasLate >= 4) {
 		return true;
 	} else {
 		return false;
